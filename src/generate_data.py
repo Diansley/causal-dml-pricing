@@ -1,6 +1,6 @@
-﻿# -*- coding: utf-8 -*-
-import numpy as np
+﻿import numpy as np
 import pandas as pd
+
 
 def generate_pricing_data(n_samples=5000, n_features=20, true_elasticity=-1.5, random_state=42):
     """

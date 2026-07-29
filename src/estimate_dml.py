@@ -1,12 +1,12 @@
-﻿# -*- coding: utf-8 -*-
+﻿import numpy as np
 import pandas as pd
-import numpy as np
+from doubleml import DoubleMLData, DoubleMLPLR
 from sklearn.linear_model import LinearRegression, RidgeCV
 from sklearn.neural_network import MLPRegressor
-from sklearn.preprocessing import StandardScaler, SplineTransformer
 from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import SplineTransformer, StandardScaler
 from xgboost import XGBRegressor
-from doubleml import DoubleMLData, DoubleMLPLR
+
 
 def run_causal_comparison():
     df = pd.read_csv('data/pricing_dataset.csv')
